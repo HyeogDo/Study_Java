@@ -25,5 +25,9 @@ public class Addition {
 		System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
 	}
 	
+	public int addReturn () {
+		return (num1 + num2);
+	}
+	
 	
 }

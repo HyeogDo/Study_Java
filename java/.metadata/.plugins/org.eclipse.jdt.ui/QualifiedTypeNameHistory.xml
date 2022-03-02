@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Error"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="com.javalec.base.Calendar"/>
@@ -10,4 +9,17 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="com.javalec.base.SumEvenOdd"/>
     <fullyQualifiedTypeName name="com.javalec.base.EvenOdd"/>
+    <fullyQualifiedTypeName name="com.javalec.function.Car"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.javalec.function.Korean"/>
+    <fullyQualifiedTypeName name="com.javalec.function.Addition"/>
+    <fullyQualifiedTypeName name="com.javalec.function.Calc"/>
+    <fullyQualifiedTypeName name="com.javalec.function.MethodCalc"/>
+    <fullyQualifiedTypeName name="com.javalec.function.ConstructorCalc"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.javalec.function.MultiplicationTableField"/>
+    <fullyQualifiedTypeName name="com.javalec.function.MultiplicaitonTableMethod"/>
+    <fullyQualifiedTypeName name="com.javalec.function.MultiplicationTableConstructor"/>
+    <fullyQualifiedTypeName name="com.javalec.function.MultiplicationTableArray"/>
 </qualifiedTypeNameHistroy>
