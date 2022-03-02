@@ -1,0 +1,19 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("구구단을 출력할 숫자를 입력하세요 : ");
+		int i = scanner.nextInt();
+		scanner.close();
+		
+		MainClass mainClass = new MainClass();
+		mainClass.calc9(i);
+	}
+
+}

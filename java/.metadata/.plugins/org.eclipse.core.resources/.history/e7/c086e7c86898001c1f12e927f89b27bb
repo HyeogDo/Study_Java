@@ -1,0 +1,19 @@
+package com.javalec.base;
+
+/*
+ * 작성자 : 권혁도
+ * 생성일 : 2022/02/28
+ * 최종 수정일 : 2022/02/28
+ * 목적 : API(application programming interface) 공부
+ */
+
+public class Calendar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Calendar calendar = Calendar.getInstance();
+		int year = calendar.get(Calendar)
+	}
+
+}

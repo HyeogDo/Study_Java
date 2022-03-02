@@ -1,0 +1,11 @@
+package com.javalec.base;
+
+public class MainClass {
+	
+	public void calc9( int i ) {
+		for (int j = 1; j <= 9; j++) {
+			System.out.println(i + " X " + j + " = " + (i*j));
+		}
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.javalec.base;
+
+/*
+ * date : 2022/02/22
+ * 
+ * 
+ */
+
+public class Variable_01 {
+	
+	static // Property(Field)  전역변수
+	int intNum2 = 100;
+	
+	
+	// Method 
+	public static void main(String[] args) {
+		
+		int intNum1 = 10; //
+		
+		System.out.println(intNum1);
+		System.out.println(intNum2);
+		
+	}
+
+	
+}

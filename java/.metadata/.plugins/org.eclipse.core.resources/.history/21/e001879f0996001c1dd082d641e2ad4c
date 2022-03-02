@@ -1,0 +1,42 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+/*
+ * 작성자 : 권혁도
+ * 생성일 : 2022/02/25
+ * 최종 수정일 : 2022/02/25
+ * 목적 : for문의 이해
+ */
+public class Quiz_16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// 환경변수 선언
+		Scanner scanner = new Scanner(System.in);
+		int putNum = 0;
+		int maxNum = 0;
+		int minNum = 0;
+		int putNum2 = 0;
+		// 숫자 입력받기
+		System.out.print("입력할 숫자의 개수? (100개 미만) : ");
+		putNum = scanner.nextInt();
+		
+		System.out.println(putNum + "개의 숫자를 입력하세요!");
+		for (int i = 0; i < putNum; i++) {
+			putNum2 = scanner.nextInt();
+			if ( putNum2  > maxNum ) {
+				maxNum = putNum2;
+			}
+			if ( putNum2 < minNum ) {
+				minNum = putNum2;
+			}
+		}
+		System.out.println(maxNum, minNum);
+		
+		// 최대 최솟값 구하기
+
+	}
+
+}

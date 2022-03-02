@@ -1,0 +1,18 @@
+package com.javalec.base;
+
+/*
+ * date : 2022/02/22
+ * 
+ * 
+ */
+
+public class Variable_01 {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+		
+
+	
+}

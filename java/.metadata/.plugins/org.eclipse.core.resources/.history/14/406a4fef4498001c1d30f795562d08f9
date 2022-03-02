@@ -1,0 +1,16 @@
+package com.javalec.base;
+
+/*
+ * 작성자 : 권혁도
+ * 생성일 : 2022/02/25
+ * 최종 수정일 : 2022/02/25
+ * 목적 : for문의 이해
+ */
+public class Quiz_19 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

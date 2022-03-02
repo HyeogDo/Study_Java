@@ -1,0 +1,16 @@
+package com.javalec.base;
+
+/*
+ * date : 2022/02/22
+ * name : HyeogDo
+ * purpose : study variable
+ *
+ * 
+ */
+
+
+public class Variable_02 {
+	public static void main(String[] args) {
+		
+	}
+}

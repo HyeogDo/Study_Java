@@ -1,0 +1,24 @@
+package com.javalec.base;
+
+/*
+ * 작성자 : 권혁도
+ * 생성일 : 2022/02/25
+ * 최종 수정일 : 2022/02/25
+ * 목적 : array 공부
+ * 
+ */
+
+
+public class Array_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// 문자열 배열 7개를 생성
+		String[] str = new String[7];
+		System.out.println(str);
+		
+		
+	}
+
+}

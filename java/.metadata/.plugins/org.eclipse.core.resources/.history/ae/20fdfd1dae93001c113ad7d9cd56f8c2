@@ -1,0 +1,20 @@
+package com.javalec.base;
+
+/*
+ * date : 2022/02/22
+ * name : HyeogDo
+ * purpose : study IF
+ * 
+ */
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 비교문, 조건문
+		int i = 10, j = 20, k = 10;
+		
+	}
+
+}

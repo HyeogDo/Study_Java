@@ -1,0 +1,40 @@
+package com.javalec.base;
+
+public class Base {
+
+	public static void main(String[] args) {
+		// 	연산자 종류별 출력
+		int i = 10, j = 2, k = 5;
+		
+		// < 산술 연산자 >
+		/*
+		 * 덧셈 : 10 + 2 = 12
+		 * 뺄셈 : 10 - 2 = 8
+		 * 곱셈 : 10 * 2 = 20
+		 * 나눗셈 : 10 / 2 = 5
+		 * 나머지 : 10 % 2 = 0
+		 * 
+		 */
+		
+		System.out.println("<-- 산술 연산자 -->");
+		System.out.println("덧셈 : " + i + " + " + j + " = " + (i+j));
+		System.out.println("뺄셈 : " + i + " - " + j + " = " + (i-j));
+		System.out.println("곱셈 : " + i + " * " + j + " = " + (i*j));
+		System.out.println("나눗셈 : " + i + " / " + j + " = " + (i/j));
+		System.out.println("나머지 : " + i + " % " + j + " = " + (i%j));
+		
+		/*
+		 * <자동 증감 연산자>
+		 * 
+		 */
+		
+		System.out.println("<--- 자동 증감 연산자 ---->");
+		i++;
+		System.out.println("증가 : " + i);
+		i--;
+		System.out.println("감소 : " + i);
+		
+
+	}
+
+}

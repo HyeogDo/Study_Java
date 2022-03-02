@@ -1,0 +1,31 @@
+package com.javalec.base;
+
+/*
+ * date : 2022/02/22
+ * name : HyeogDo
+ * purpose : Study Variable
+ * 
+ */
+
+public class Variable_01 {
+	
+	
+	// Method 
+	public static void main(String[] args) {
+		
+		int intNum1 = 10; // 정수 테스트 값 
+		char char01 = 'A'; // 문자 테스트 값 
+		
+		System.out.println(intNum1);
+		System.out.println(char01);
+
+		// intNum1의 값을 100으로 변경하여 출력하기
+		
+		intNum1 = 100; // 정수 값 변경하기
+		
+		System.out.println(intNum1);
+		
+	}
+
+	
+}
