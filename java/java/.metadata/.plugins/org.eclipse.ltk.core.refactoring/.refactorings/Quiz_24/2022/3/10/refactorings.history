@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.javalec.function.MutiplicationTableField&apos; to &apos;MultiplicationTableField&apos;&#x0A;- Original project: &apos;Quiz_24&apos;&#x0A;- Original element: &apos;com.javalec.function.MutiplicationTableField&apos;&#x0A;- Renamed element: &apos;com.javalec.function.MultiplicationTableField&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MutiplicationTableField&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.javalec.function{MutiplicationTableField.java[MutiplicationTableField" matchStrategy="1" name="MultiplicationTableField" qualified="false" references="true" similarDeclarations="false" stamp="1646207369108" textual="false" version="1.0"/>
-</session>
