@@ -1,0 +1,12 @@
+package com.javalec.function;
+
+
+/*
+* 작성자 : 권혁도
+* 생성일 : 2022/03/03
+* 최종 수정일 : 2022/03/03
+* 목적 : 객체 지향 프로그램의 이해
+*/
+public class Car {
+
+}

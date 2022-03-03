@@ -1,0 +1,41 @@
+package com.javalec.function;
+
+
+/*
+* 작성자 : 권혁도
+* 생성일 : 2022/03/03
+* 최종 수정일 : 2022/03/03
+* 목적 : 객체 지향 프로그램의 이해
+*/
+public class Car {
+	
+	// Field
+	public String company = "현대자동차";
+	public String model;
+	public String color;
+	public int maxSpeed;
+	
+	// Constructor
+	// 오버로딩(overloading) : 생성자가 같은 생성자 이름을 갖는 경우 parameter가 다를때만 성립(타입 or 개수)
+	public Car() {
+		// TODO Auto-generated constructor stub
+		
+	}
+
+	public Car(String model) {
+		super();
+		this.model = model;
+	}
+
+	public Car(String model, String color) {
+		super();
+		this.model = model;
+		this.color = color;
+	}
+	
+
+	
+	
+	// Method
+
+}
