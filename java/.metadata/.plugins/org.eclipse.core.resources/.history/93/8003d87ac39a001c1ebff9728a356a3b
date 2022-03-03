@@ -1,0 +1,13 @@
+package com.javalec.base;
+
+public class StoreShop02 extends StoreHQ{
+	
+	// Field
+	
+	
+	// Constructor
+	
+	
+	// Method
+	
+}

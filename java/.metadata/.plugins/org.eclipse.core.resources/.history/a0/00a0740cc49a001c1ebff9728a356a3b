@@ -1,0 +1,20 @@
+package com.javalec.base;
+
+/*
+* 작성자 : 권혁도
+* 생성일 : 2022/03/03
+* 최종 수정일 : 2022/03/03
+* 목적 : 상속의 이해
+*/
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StoreShop01 storeShop01 = new StoreShop01();
+		storeShop01.orderKim();
+		storeShop01.orderBu();
+		storeShop01.orderKong();
+		storeShop01.orderSoon();
+	}
+
+}

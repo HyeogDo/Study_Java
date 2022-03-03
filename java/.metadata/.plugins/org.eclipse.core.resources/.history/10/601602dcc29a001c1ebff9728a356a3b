@@ -1,0 +1,32 @@
+package com.javalec.base;
+
+/*
+* 작성자 : 권혁도
+* 생성일 : 2022/03/03
+* 최종 수정일 : 2022/03/03
+* 목적 : 상속의 이해
+*/
+public class StoreShop01 extends StoreHQ{
+	
+	// Field
+	
+	// Constructor
+	public StoreShop01() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	// Method
+	
+	// 김치찌개가 4500원
+	@Override
+	public void orderBi() {
+		// TODO Auto-generated method stub
+		System.out.println("김치찌개(HQ) : 4500원");
+	}
+	
+	// 부대찌개 5000원
+	
+	
+	// 순대국 : 판매하지 않습니다.
+	
+}
