@@ -33,14 +33,14 @@ public class Main {
 		multiplicationTableField.startNum = startNum;
 		multiplicationTableField.makeTable();
 		
-		// ---------------------------
+		// --------------------------
 		System.out.println("========================");
 		
 		// 2. Method를 이용한 방법
 		MultiplicationTableMethod multiplicationTableMethod = new MultiplicationTableMethod();
 		multiplicationTableMethod.makeTable(startNum);
 
-		// ---------------------------
+		// --------------------------
 		System.out.println("========================");
 		
 		// 3. Constructor를 이용한 방법
@@ -48,7 +48,7 @@ public class Main {
 		multiplicationTableConstructor.makeTable();
 
 		
-		// ---------------------------
+		// --------------------------
 		System.out.println("========================");
 		
 		// 4. String 배열로 return 하는 방법
