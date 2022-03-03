@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/tj/Downloads/RangeSum/RangeSum.jar"/>
+	<classpathentry kind="lib" path="/Users/tj/Documents/Team1/GuGuDan/GuGuDan.jar"/>
+	<classpathentry kind="lib" path="/Users/tj/Documents/Team1/AddSubtract/AddSubtract.jar"/>
+	<classpathentry kind="lib" path="/Users/tj/Documents/Team1/MultipDivition/Multip_Divition.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

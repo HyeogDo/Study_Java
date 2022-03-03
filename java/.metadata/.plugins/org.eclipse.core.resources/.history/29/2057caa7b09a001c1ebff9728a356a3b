@@ -1,0 +1,32 @@
+package com.javalec.function;
+
+public class MultiCalc {
+	
+	// Field
+	
+	
+	
+	// Constructor
+	public MultiCalc() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	// Method
+	public void calc(int choiceNumber, int firstNum, int secondNum) {
+		addition(firstNum, secondNum);
+		subtraction(firstNum, secondNum);
+		multiplication(firstNum, secondNum);
+	}
+	
+	private void addition(int firstNum, int secondNum) {
+		System.out.printf("%d + %d = %d", firstNum, secondNum, (firstNum + secondNum));
+	}
+	private void subtraction(int firstNum, int secondNum) {
+		System.out.printf("%d - %d = %d", firstNum, secondNum, (firstNum - secondNum));
+	}
+	private void multiplication(int firstNum, int secondNum) {
+		System.out.printf("%d * %d = %d", firstNum, secondNum, (firstNum * secondNum));
+	}
+	
+
+}

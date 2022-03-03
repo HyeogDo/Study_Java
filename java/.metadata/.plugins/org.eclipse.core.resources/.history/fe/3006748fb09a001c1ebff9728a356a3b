@@ -1,0 +1,16 @@
+package com.javalec.function;
+
+public class MultiCalc {
+	
+	// Field
+	
+	// Constructor
+	public MultiCalc() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	// Method
+	
+	
+
+}
