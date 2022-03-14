@@ -1,0 +1,141 @@
+{\rtf1\ansi\ansicpg949\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 3/11 
+\f1 \'bc\'f6\'be\'f7\'b3\'bb\'bf\'eb
+\f0 \
+\
+
+\f1 Shopping Mall (\'bd\'c5\'b9\'df\'b0\'a1\'b0\'d4)\
+\
+1. \'b0\'ed\'b0\'b4 \'b5\'ee\'b7\'cf : userid, \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3, \'bc\'ba\'b8\'ed\
+\
+2. \'c1\'a6\'c7\'b0 : product id, \'c1\'a6\'c7\'b0\'b8\'ed, \'c0\'e7\'b0\'ed\'b7\'ae, \'b1\'dd\'be\'d7\
+\
+\'bb\'e7\'bf\'eb\'c0\'da \'c1\'a4\'ba\'b8 \'c0\'d4\'b7\'c2\
+- id : yubee\
+- \'bc\'ba\'b8\'ed : \'c0\'af\'ba\'f1\
+- \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3 : 010-1111-2222\
+\
+Select now(); -> \'c1\'f6\'b1\'dd\'bd\'c3\'b0\'a3 \'c3\'e2\'b7\'c2\
+\
+# \'bc\'ee\'c7\'ce\'b8\'f4 \'b0\'e8\'bb\'ea \'c8\'f7\'bd\'ba\'c5\'e4\'b8\'ae\
+\
+\
+# \'b0\'ed\'b0\'b4\'c0\'cc \'b1\'b8\'b8\'c5\'c7\'d1 \'b0\'e6\'bf\'ec\
+insert into buy(buserID, bproductID, buydate, bquantity)\
+values ('yubee', 'nike', now(), 5);\
+update product set premain = premain -5 where productID = 'nike';\
+\
+select b.buserID as ID, b.buydate as buydate, b.bproductID as product, b.bquantity as quantity, p.pcost as cost, b.bquantity * p.pcost as totalcost\
+from buy as b, product as p, customers as c\
+where c.userID = 'yubee' and c.userID = b.buserID and b.bproductID = p.productID;\
+\
+select buy.buserID, buy.buydate, buy.bproductID, buy.bquantity, product.pcost, buy.bquantity * product.pcost\
+from buy, product, customers\
+where customers.userID = 'yubee' and customers.userID = buy.buserID and buy.bproductID = product.productID;\
+\
+insert into buy(buserID, bproductID, buydate, bquantity)\
+values ('yubee', 'proSpecs', now(), 2);\
+update product set premain = premain - 2 where productID = 'proSpecs';\
+\
+insert into buy(buserID, bproductID, buydate, bquantity)\
+values ('yubee', 'newBalance', now(), 3);\
+update product set premain = premain - 3 where productID = 'newBalance';\
+\
+insert into buy(buserID, bproductID, buydate, bquantity)\
+values ('jangbee', 'nike', now(), 10);\
+update product set premain = premain - 10 where productID = 'nike';\
+\
+insert into buy(buserID, bproductID, buydate, bquantity)\
+values ('jangbee', 'newBalance', now(), 5);\
+update product set premain = premain - 5 where productID = 'newBalance';\
+\
+insert into buy(buserID, bproductID, buydate, bquantity)\
+values ('kwanwoo', 'newBalance', now(), 5);\
+update product set premain = premain - 5 where productID = 'newBalance';\
+\
+select b.buserID as ID, b.buydate as buydate, b.bproductID as product, b.bquantity as quantity, p.pcost as cost, b.bquantity * p.pcost as totalcost\
+from buy as b, product as p, customers as c\
+where c.userID = b.buserID and b.bproductID = p.productID;\
+\
+# \'b8\'c5\'c3\'e2\'b1\'dd\'be\'d7 \'bc\'f8\'c0\'a7\
+select b.buserID as ID, sum(b.bquantity * p.pcost) as sum\
+from buy as b, product as p, customers as c\
+where c.userID = b.buserID and b.bproductID = p.productID\
+group by b.buserID\
+order by sum desc;\
+\
+# employee_tbl\'bf\'a1\'bc\'ad \'c0\'cc\'b8\'a7\'ba\'b0 \'b0\'b9\'bc\'f6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select name, count(*) from employee_tbl\
+group by name;\
+\
+# employee_tbl\'bf\'a1\'bc\'ad daily_typing_pages\'b0\'a1 250\'c0\'cc\'b0\'c5\'b3\'aa, 220\'c0\'cc\'b0\'c5\'b3\'aa 170\'c0\'ce \'c1\'a4\'ba\'b8 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select * from employee_tbl where daily_typing_pages = 250 or daily_typing_pages = 220 or daily_typing_pages = 170;\
+\
+select * from employee_tbl where daily_typing_pages in (250, 220, 170);\
+\
+\
+# employee_tbl\'bf\'a1\'bc\'ad daily_typing_pages\'b0\'a1 170 \'c0\'cc\'bb\'f3 300 \'c0\'cc\'c7\'cf\'c0\'ce \'c1\'a4\'ba\'b8 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select * from employee_tbl where daily_typing_pages >= 170 and daily_typing_pages <= 300;\
+\
+select * from employee_tbl where daily_typing_pages between 170 and 300;\
+\
+\
+# \'b0\'a2 \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1 \'c0\'d6\'b4\'c2 \'c0\'cc\'b8\'a7\'b0\'fa \'c1\'d6\'bc\'d2\'b8\'a6 \'c7\'d1\'b2\'a8\'b9\'f8\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select fname as first, lname as last, addr as address from prospect\
+union\
+select first_name, last_name, address from customer\
+union\
+select company, '' ,street from vendor;\
+\
+# customer\'c0\'c7 first_name\'b0\'fa prospect\'c0\'c7 fname\'c0\'cc \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'da\'b7\'e1 \'c1\'df customer\'c0\'c7 first_namer\'b0\'fa last_name \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select c.first_name, c.last_name \
+from customer c, prospect p\
+where c.first_name = p.fname;\
+\
+\
+# employee_tbl\'bf\'a1\'bc\'ad \'c0\'cc\'b8\'a7\'c0\'cc Zara\'c0\'ce \'bb\'e7\'b6\'f7\'c0\'ba \'b8\'ee\'b8\'ed\'c0\'ce\'b0\'a1?\
+select count(*) \
+from employee_tbl\
+where name = 'Zara';\
+\
+# employee_tbl\'bf\'a1\'bc\'ad \'c3\'d6\'b4\'eb daily_typing_pages\'b4\'c2 \'be\'f3\'b8\'b6\'c0\'ce\'b0\'a1?\
+select max(daily_typing_pages) \
+from employee_tbl;\
+\
+# employee_tbl\'bf\'a1\'bc\'ad  \'c0\'cc\'b8\'a7\'ba\'b0 \'c3\'d6\'b4\'eb daily_typing_pages\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select name, max(daily_typing_pages) \
+from employee_tbl\
+group by name;\
+\
+# employee_tbl\'bf\'a1\'bc\'ad  \'c3\'d6\'bc\'d2 daily_typing_pages\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select min(daily_typing_pages) \
+from employee_tbl;\
+\
+# employee_tbl\'bf\'a1\'bc\'ad  \'c0\'cc\'b8\'a7\'ba\'b0 \'c3\'d6\'bc\'d2 daily_typing_pages\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select name, min(daily_typing_pages) \
+from employee_tbl\
+group by name;\
+\
+# employee_tbl\'bf\'a1\'bc\'ad \'c6\'f2\'b1\'d5 daily_typing_pages\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select avg(daily_typing_pages) \
+from employee_tbl;\
+\
+# employee_tbl\'bf\'a1\'bc\'ad  \'c0\'cc\'b8\'a7\'ba\'b0 \'c6\'f2\'b1\'d5 daily_typing_pages\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select name, avg(daily_typing_pages) \
+from employee_tbl\
+group by name;\
+\
+# employee_tbl\'bf\'a1\'bc\'ad daily_typing_pages\'c0\'c7 \'c3\'d1\'c7\'d5\'c0\'ba \'be\'f3\'b8\'b6\'c0\'ce\'b0\'a1?\
+select sum(daily_typing_pages) \
+from employee_tbl;\
+\
+# employee_tbl\'bf\'a1\'bc\'ad \'c0\'cc\'b8\'a7\'ba\'b0 daily_typing_pages\'c0\'c7 \'c7\'d5\'b0\'e8 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+select name, sum(daily_typing_pages) \
+from employee_tbl\
+group by name;}
