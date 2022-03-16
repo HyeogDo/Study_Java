@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			int num1, num2;
+			String[] calculator;
+			
+			num1 = Integer.parseInt(request.getParameter("num1"));
+			num2 = Integer.parseInt(request.getParameter("num2"));
+			calculator = request.getParameterValues("calculator");
+		%>
+		<%!
+			public String cal(String calculator, int num1, int num2) {
+				String res = "null";
+				switch(calculator) {
+				case "addition":
+					res = ("덧셈 : " + (num1 + num2));
+					break;
+				case "subtraction":
+					res = ("뺄셈 : " + (num1 - num2));
+					break;
+				case "multiplication":
+					res = ("곱셈 : " + (num1 * num2));
+					break;
+				case "division":
+	 				try {
+	 					res = ("나눗셈 : " + ((double) num1 / num2));
+					} catch(Exception e) {
+						res = ("0으로 나눌수는 없습니다.");
+					}
+	
+					break;
+				default:
+					break;
+						
+				}
+				return res;
+			}
+		%>
+		
+		<p>계산 결과값입니다.</p>
+		
+		<%
+			for (int i = 0; i < calculator.length;i++) {
+				
+				cal(calculator[i], num1, num2);
+			}
+				
+		%>
+	</body>
+</html>

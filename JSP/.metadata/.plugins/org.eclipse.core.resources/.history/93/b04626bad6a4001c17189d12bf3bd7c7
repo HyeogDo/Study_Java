@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Request 정보</title>
+	</head>
+	<body>
+		<%
+			out.print("Server : " + request.getServerName() + "<br>");
+			out.print("Port : " + request.getServerPort() + "<br>");
+			out.print("요청방식 : " + request.getMethod() + "<br>");
+			
+		%>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Form Tag</title>
+	</head>
+	<body>
+		<form action="#" method="get">
+			이름 : <input type="text" name="userName"><br>
+			ID : <input type="text" name="userId" size="5"><br>
+			비밀번호 : <input type="password" name="userPassword"><br>
+			연락처 : <input type="number" name="userPhoneNum1" size = "3"> - <input type="number" name="userPhoneNum2" size = "5" > - <input type="number" name="userPhoneNum3" size = "5"><br>
+		
+		</form>	
+		
+		
+	</body>
+</html>

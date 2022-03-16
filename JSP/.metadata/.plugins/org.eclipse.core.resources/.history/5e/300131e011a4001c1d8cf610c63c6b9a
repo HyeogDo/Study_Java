@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<p><h1><font color="#4682B4" ><b>오늘 주목할 만한 남성 의류</b></font></h1></p>
+		<table border="1">
+			<tr>
+				<td>
+					
+					<ul >
+						<li><img alt="사진1" src="https://millioncor.com/web/product/small/202201/111fdf10c3e5924762a0e3e865c86224.jpg" width="100"> 여름신상남자청바지/슬림일자/빅사이즈/반바지/면바지 (19,800원)</li>
+						<li><img alt="사진2" src="https://i2.wp.com/static.coupangcdn.com/image/vendor_inventory/5e6a/83ad53d0086e6a3bc1c60ef49007173b4dce5ad97707ac57ebc9fa715e3d.jpg?resize=350%2C350&ssl=1" width="100"> 여름신상 쿨 슬랙스/밴딩/청/면바지/남자/남성/밴드 (19,800원)</li>
+						<li><img alt="사진3" src="https://shop2.daumcdn.net/thumb/R500x500/?fname=http%3A%2F%2Fshop2.daumcdn.net%2Fshophow%2Fp%2FC5103840605.jpg%3Fut%3D20210820210705" width="100"> [핫코드] 여름신상 남자 면바지/빅사이즈/남성/스판슬랙스/카 (19,800원)</li>
+						<li><img alt="사진4" src="https://shop2.daumcdn.net/thumb/R500x500/?fname=http%3A%2F%2Fshop2.daumcdn.net%2Fshophow%2Fp%2FR13759849349.jpg%3Fut%3D20220113055754" width="100"> 여름신상 남자 청바지/스판일자/빅사이즈/면바지/남성 (19,800원)</li>
+						
+					</ul>
+				</td>
+			
+			</tr>
+		</table>
+	</body>
+</html>

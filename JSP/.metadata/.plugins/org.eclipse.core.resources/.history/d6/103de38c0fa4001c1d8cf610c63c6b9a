@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<p><img alt="Naver Logo" src="./Images/naverLogo.png"></p>
+		<p><img alt="Naver Logo" src="./Images/naverLogo.png" width="300"></p>
+		<p><img alt="리트리버" src="https://thumb.mt.co.kr/06/2021/02/2021020108533920872_1.jpg/dims/optimize/"></p>
+	</body>
+</html>

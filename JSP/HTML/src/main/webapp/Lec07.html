@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Form Tag</title>
+	</head>
+	<body>
+		<form action="#" method="post">
+			<table>
+				<tr>
+					<td>이름 : </td>
+					<td> <input type="text" name="userName" value="홍길동"></td>
+				</tr>
+				<tr>
+					<td>ID : </td>
+					<td> <input type="text" name="userId" size="5"></td>
+				</tr>
+				<tr>
+					<td>비밀번호 : </td>
+					<td> <input type="password" name="userPassword"></td>
+				</tr>
+				<tr>
+					<td>연락처 : </td>
+					<td><input type="text" name="userPhoneNum1" size = "3" maxlength="3"> - <input type="text" name="userPhoneNum2" size = "5" maxlength="4" > - <input type="text" name="userPhoneNum3" size = "5" maxlength="4"></td>
+				</tr>
+				<tr>
+					<td>사진 : </td>
+					<td> <input type="file" name="picture"></td>
+				</tr>
+				<tr>
+					<td>성별 구분 : </td>
+					<td> <input type="radio" name="gender" value="man" checked="checked">남
+					<input type="radio" name="gender" value="woman" >여</td>
+				</tr>
+				<tr>
+					<td>사용 언어 : </td>
+					<td> <input type="checkbox" name = "lang" value="kor" checked="checked"> 한글
+						<input type="checkbox" name = "lang" value="eng" > 영어
+						<input type="checkbox" name = "lang" value="jpn" > 일본어
+						<input type="checkbox" name = "lang" value="chn" > 중국어</td>
+				</tr>
+				<tr>
+					<td>자기 소개 : </td>
+					<td> <textarea rows="5" cols="20" name="introduce">간략하게 입력해주세요</textarea></td>
+				</tr>
+				<tr>
+					<td>국적 : </td>
+					<td> <select name="nationality">
+							<option>Korea</option>
+							<option selected="selected">USA</option>
+							<option>Japan</option>
+							<option>China</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>좋아하는 음식 : </td>
+					<td> <select name="food" multiple="multiple">
+							<option>김치</option>
+							<option>불고기</option>
+							<option>비빔밥</option>
+							<option>냉면</option>
+							<option>순대</option>
+							<option>파전</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td align="left"><input type="submit" name="okBtn" value="OK"></td>					
+				</tr>
+			</table>
+
+		</form>	
+		
+		
+	</body>
+</html>

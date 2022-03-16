@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%!
+			public int power(int a, int b) {
+				return a * b;
+			}
+		%>
+		
+		<%
+			for (int i = 1; i <= 5; i++ ) {
+				out.print(2 + " ^ " + i + " = " + power(2,i) + "<br>");
+			}
+		%>
+		
+		<%
+			int i = 2;
+			int res = 1;
+		%>
+		2 ^ 1 = <%out.print(power(i,res)); res *= i;%>
+		2 ^ 2 = <%out.print(power(i,res)); res *= i;%>
+		2 ^ 3 = <%out.print(power(i,res)); res *= i;%>
+		2 ^ 4 = <%out.print(power(i,res)); res *= i;%>
+		2 ^ 5 = <%out.print(power(i,res)); res *= i;%>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Table Tag</title>
+
+	</head>
+	<body>
+		<table border="1" >
+			<tr align="center" bordercolor="#ff2313">
+				<td colspan = "2" bgcolor="#82ff21">이름</td>
+				<th>국어</th>
+				<th>영어</th>
+				<th>수학</th>
+			</tr>
+			<tr>
+				<td colspan="2" rowspan="2" bgcolor="#8223ff">홍길동</td>
+				<td align="right"><i>100</i></td>
+				<td align="right">90</td>
+				<td align="right">80</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">평균</td>
+				<td align="right"><b>90</b></td>
+			</tr>
+			
+		</table>
+	</body>
+</html>

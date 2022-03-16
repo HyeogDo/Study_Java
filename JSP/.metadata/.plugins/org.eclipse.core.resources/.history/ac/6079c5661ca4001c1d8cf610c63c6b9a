@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Form Tag</title>
+	</head>
+	<body>
+		<form action="#" method="get">
+			이름 : <input type="text" name="userName"><br>
+			
+		</form>	
+	</body>
+</html>

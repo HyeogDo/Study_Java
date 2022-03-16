@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Addition</title>
+	</head>
+	<body>
+		<%
+			int a = 30;
+			int b = 20;
+			int addition = a + b;
+			int subtraction = a - b;
+			int multiplication = a * b;
+			int division = a / b;
+			int remainder = a % b;
+		%>		
+		<%=a %> + <%=b %> = <%=addition %> <br>
+		<% 
+			out.println(a + " + " + b + " = " + addition + "<br>");
+			out.println(a + " - " + b + " = " + subtraction + "<br>");
+			out.println(a + " * " + b + " = " + multiplication + "<br>");
+			out.println(a + " / " + b + " = " + division + "<br>");
+			out.println(a + " % " + b + " = " + remainder + "<br>");
+		%>
+		
+		<%
+			for (int i = 1; i <= 9; i++) {
+				%> 2 * <% out.print(i); %> = <% out.print(2*i); %> <br>
+				=======================<br>
+				<%
+			}
+		%>
+
+		
+		
+	</body>
+</html>

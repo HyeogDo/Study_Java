@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h1><b>오늘의 메뉴</b></h1><br>
+		
+		<ul>
+			<li>삼계탕</li>
+			<li>돈까스</li>
+			<li>우동</li>
+			<li>짬뽕</li>
+		</ul>
+	</body>
+</html>

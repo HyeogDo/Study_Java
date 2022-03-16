@@ -1,0 +1,147 @@
+{\rtf1\ansi\ansicpg949\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 3_16 
+\f1 \'bc\'f6\'be\'f7
+\f0 \
+\
+EER\
+\
+JSP page
+\f1 \'c0\'c7
+\f0  
+\f1 \'c0\'fc\'c3\'bc\'c0\'fb\'c0\'ce
+\f0  
+\f1 \'bc\'d3\'bc\'ba
+\f0  
+\f1 \'c1\'f6\'c1\'a4\'bd\'c3
+\f0  
+\f1 \'bb\'e7\'bf\'eb
+\f0 \
+Page, include, taglib\
+Page : 
+\f1 \'c7\'d8\'b4\'e7
+\f0  page
+\f1 \'c0\'c7
+\f0  
+\f1 \'c0\'fc\'c3\'bc\'c0\'fb\'c0\'ce
+\f0  
+\f1 \'bc\'d3\'bc\'ba
+\f0  
+\f1 \'c1\'f6\'c1\'a4
+\f0 \
+Include : 
+\f1 \'ba\'b0\'b5\'b5\'c0\'c7
+\f0  page
+\f1 \'b8\'a6
+\f0  
+\f1 \'c7\'f6\'c0\'e7\'c0\'c7
+\f0  page
+\f1 \'bf\'a1
+\f0  
+\f1 \'bb\'f0\'c0\'d4
+\f0 \
+\
+JSP 
+\f1 \'b3\'bb\'c0\'e5
+\f0  
+\f1 \'ba\'af\'bc\'f6
+\f0  : request\
+Web Browser
+\f1 \'b8\'a6
+\f0  
+\f1 \'c5\'eb\'c7\'d8
+\f0  Server
+\f1 \'bf\'a1
+\f0  
+\f1 \'be\'ee\'b6\'b2
+\f0  
+\f1 \'c1\'a4\'ba\'b8\'b8\'a6
+\f0  
+\f1 \'bf\'e4\'c3\'bb\'c7\'cf\'b4\'c2
+\f0  
+\f1 \'b0\'cd\'c0\'bb
+\f0  request
+\f1 \'b6\'f3\'b0\'ed
+\f0  
+\f1 \'c7\'d1\'b4\'d9
+\f0 \
+Client
+\f1 \'c0\'c7
+\f0  
+\f1 \'bf\'e4\'c3\'bb
+\f0  
+\f1 \'c1\'a4\'ba\'b8\'b4\'c2
+\f0  request
+\f1 \'b0\'b4\'c3\'bc\'b0\'a1
+\f0  
+\f1 \'b0\'fc\'b8\'ae\'c7\'d1\'b4\'d9
+\f0 .\
+\
+URL : Uniform Request Locator\
+URI : Uniform Request Information\
+\
+Parameter Method\
+getParameter(String name): name
+\f1 \'bf\'a1
+\f0  
+\f1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2
+\f0  Parameter
+\f1 \'c0\'c7
+\f0  
+\f1 \'b0\'aa\'c0\'bb
+\f0  
+\f1 \'b1\'b8\'c7\'d4
+\f0 \
+getParameterNames(): 
+\f1 \'b8\'f0\'b5\'e7
+\f0  parameter
+\f1 \'c0\'c7
+\f0  
+\f1 \'c0\'cc\'b8\'a7\'c0\'bb
+\f0  
+\f1 \'b1\'b8\'c7\'d4
+\f0 \
+getParameterValues(String name): 
+\f1 name\'bf\'a1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 Parameter\'c0\'c7 \'b0\'aa\'b5\'e9\'c0\'bb \'b1\'b8\'c7\'d4\
+\
+JSP \'c4\'da\'b5\'e5\'b5\'e9\
+\
+# \'be\'ee\'b7\'b9\'c0\'cc \'c3\'e2\'b7\'c2\
+out.print(Arrays.toString(\'be\'ee\'b7\'b9\'c0\'cc\'c0\'cc\'b8\'a7);\
+\
+# \'b3\'af\'c2\'a5 \'c3\'e2\'b7\'c2\
+GregorianCalendar gCalendar = new GregorianCalendar();\
+String.format(\'a1\'b0%TY\'b3\'e2 %Tm\'bf\'f9 %Td\'c0\'cf\'a1\'b1, gCalendar, gCalendar, gCalendar)\
+String.format(\'a1\'b0%TH\'bd\'c3 %TM\'ba\'d0 %TS\'c3\'ca\'a1\'b1, gCalendar, gCalendar, gCalendar)\
+\
+# include\
+# \'b4\'d9\'b8\'a5 \'c6\'c4\'c0\'cf\'b5\'e9\'c0\'bb \'c1\'df\'b0\'a3\'bf\'a1 \'bb\'f0\'c0\'d4 \'bd\'c3\'c5\'b3 \'bc\'f6 \'c0\'d6\'b4\'d9\
+<%@ include file = \'a1\'b0\'c6\'c4\'c0\'cf\'b8\'ed.\'c6\'c4\'c0\'cf\'c7\'fc\'c5\'c2\'a1\'b1 %>\
+\
+# request\
+# \'b4\'d9\'b8\'a5 \'c8\'ad\'b8\'e9\'bf\'a1\'bc\'ad \'b9\'de\'c0\'ba \'b0\'aa\'b5\'e9\'c0\'bb \'b9\'de\'be\'c6\'bf\'c3 \'bc\'f6 \'c0\'d6\'b4\'d9\
+# http://localhost:8080/JSP/RequestObj.jsp \'c0\'cc\'b0\'e6\'bf\'ec\'b8\'a6 \'bf\'b9\'b7\'ce \'b5\'e9\'b8\'e9\
+\
+- \'bc\'ad\'b9\'f6 \'c0\'cc\'b8\'a7 \'b9\'de\'be\'c6\'bf\'c0\'b1\'e2\
+request.getServerName() : localhost\
+- Port \'b9\'de\'be\'c6\'bf\'c0\'b1\'e2\
+request.getServerPort() : 8080\
+- \'bf\'e4\'c3\'bb \'b9\'e6\'bd\'c4\
+request.getMethod() : GET\
+- Protocol\
+request.getProtocol() : HTTP/1.1\
+- URL\
+request.RequestURL() : http://localhost:8080/JSP/RequestObj.jsp\
+- URI\
+request.RequestURI() : JSP/RequestObj.jsp\
+\
+# \'c0\'d4\'b7\'c2\'b9\'de\'c0\'ba \'b0\'aa\'b5\'e9\'c0\'bb \'b9\'de\'c0\'bb \'b6\'a7\
+request.getParameter(\'a1\'b0\'bc\'b3\'c1\'a4\'c7\'d1 \'ba\'af\'bc\'f6 \'b8\'ed\'a1\'b1)\
+\'c7\'d1\'b1\'db \'b9\'de\'c0\'bb \'b6\'a7 \'c1\'df\'bf\'e4\'c7\'d1 \'c1\'a1 : encoding \'c7\'fc\'bd\'c4\'c0\'bb \'c1\'a4\'c7\'d8\'c1\'e0\'be\'df \'c7\'d1\'b4\'d9\
+request.setCharacterEncoding(\'a1\'b0UTF-8\'a1\'b1); \'c0\'bb \'be\'d5\'bf\'a1\'bc\'ad \'bc\'b1\'be\'f0\'c7\'d8\'c1\'e0\'be\'df \'c7\'d1\'b4\'d9!!!!!\
+}

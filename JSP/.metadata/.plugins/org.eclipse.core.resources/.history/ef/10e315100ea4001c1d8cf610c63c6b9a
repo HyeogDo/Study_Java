@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+	</head>
+	<body>
+		<p>Menu List</p>
+		<ul>
+			<li>Menu 1</li>
+			<li>Menu 2</li>
+			<li>Menu 3</li>
+			<li>Menu 4</li>
+			<li>Menu 5</li>
+			<li>Menu 6</li>
+		</ul>
+		
+		<p>Menu List 2</p>
+		<ol>
+			<li>Menu 1</li>
+			<li>Menu 2</li>
+			<li>Menu 3</li>
+			<li>Menu 4</li>
+			<li>Menu 5</li>
+			<li>Menu 6</li>
+		</ol>
+		
+		<p><font color="#4682B4">검색 사이트 리스트</font></p>
+		<ol>
+			<li><a href = "https://www.google.com" target="_blank">Google</a></li>
+			<li><a href = "https://www.yahoo.com" target="_self">Yahoo</a></li>
+			<li><a href = "https://www.naver.com">Naver</a></li>
+		</ol>
+		
+	</body>
+</html>

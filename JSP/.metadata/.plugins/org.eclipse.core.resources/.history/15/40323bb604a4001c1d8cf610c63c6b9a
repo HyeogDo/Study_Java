@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Table Tag</title>
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<td>국어</td>
+				<td>영어</td>
+				<td>수학</td>
+			</tr>
+		</table>
+	</body>
+</html>

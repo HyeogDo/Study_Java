@@ -1,0 +1,21 @@
+<%@page import="java.util.GregorianCalendar"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			GregorianCalendar now = new GregorianCalendar();
+			
+			String date = String.format("%TF", now); // %TF : yyyy - mm - dd
+			
+			
+		%>
+			오늘 날짜 : <%=date %> <br>
+			
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			int sum = 0;
+			int i = 0;
+			while (true) {
+				i++;
+				sum += i;
+				out.print(i);
+				if ( i < 100 ) {
+		%>
+				 + 
+		<%
+				} else if (i == 100) {
+					out.print("=" + sum);
+					break;
+				}
+			}
+		%>
+	
+	</body>
+</html>

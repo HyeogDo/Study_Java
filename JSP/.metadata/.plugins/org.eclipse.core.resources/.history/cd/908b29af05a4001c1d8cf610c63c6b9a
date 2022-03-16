@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Table Tag</title>
+
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<td align="center">국어</td>
+				<td>영어</td>
+				<td>수학</td>
+			</tr>
+			<tr>
+				<td align="center">100</td>
+				<td align="right">90</td>
+				<td align="center" bgcolor="#334231">80</td>
+			</tr>
+		</table>
+	</body>
+</html>

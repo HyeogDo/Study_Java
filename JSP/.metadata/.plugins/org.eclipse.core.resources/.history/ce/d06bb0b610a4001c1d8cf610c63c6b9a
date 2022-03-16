@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<p><font color="#4682B4"><b>오늘 주목할 만한 남성 의류</b></font></p>
+		<table border="1">
+			<tr>
+				<ul >
+					<li><img alt="사진1" src=""> 여름신상남자청바지/슬림일자/빅사이즈/반바지/면바지 (19,800원)</li>
+					<li><img alt="사진2" src=""> 여름신상 쿨 슬랙스/밴딩/청/면바지/남자/남성/밴드 (19,800원)</li>
+					<li><img alt="사진3" src=""> [핫코드] 여름신상 남자 면바지/빅사이즈/남성/스판슬랙스/카 (19,800원)</li>
+					<li><img alt="사진4" src=""> 여름신상 남자 청바지/스판일자/빅사이즈/면바지/남성 (19,800원)</li>
+					
+				</ul>
+			
+			</tr>
+		</table>
+	</body>
+</html>

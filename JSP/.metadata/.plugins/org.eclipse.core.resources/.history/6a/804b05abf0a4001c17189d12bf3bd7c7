@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>사용자 정보 입력 결과</title>
+	</head>
+	<body>
+		<%
+			String name, id;
+			
+		
+			request.setCharacterEncoding("UTF-8");
+			name = request.getParameter("name");
+			id = request.getParameter("id");
+		%>
+		
+			이름 : <%=name %> <br>
+			아이디 : <%=id %> <br>
+	</body>
+</html>

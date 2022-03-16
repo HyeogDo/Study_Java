@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<p><font color="#4682B4">검색 사이트 리스트</font></p>
+		<ol>
+			<li><a href = "https://www.google.com" target="_blank">Google</a></li>
+			<li><a href = "https://www.yahoo.com" target="_self"">Yahoo</a></li>
+			<li><a href = "https://www.naver.com">Naver</a></li>
+		</ol>
+	
+	</body>
+</html>
