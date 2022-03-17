@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			int weight;
+			double height;
+			weight = Integer.parseInt(request.getParameter("weight"));
+			height = Double.parseDouble(request.getParameter("height")) * 0.01;
+			double bmi =  weight / (height * height);
+		%>
+		<%!
+			public String bmiStatus(double bmi) {
+				String res = "null";
+				if (bmi < 18.5) {
+					res = "저체중입니다. 조금 더 몸무게를 늘릴 필요가 있습니다.";
+				} else if (bmi < 23) {
+					res = "정상입니다. 이대로 유지하세요!";
+				} else if (bmi < 25) {
+					res = "과체중입니다. 조금 더 노력하셔야겠네요!";
+				} else {
+					res = "비만입니다.";
+					
+				}
+				return res;
+			}
+		%>
+		<img alt="bmiTable" src="./imgsrc/bmiTable.png">
+		<h1>당신의 BMI는 <%=String.format("%2.2f", bmi) %>입니다.</h1><br>
+		<h1>당신은 <%=bmiStatus(bmi) %></h1>
+		<% if ( bmi >= 25) {
+				%><h2><a href="http://theskinny.co.kr/realmodel/subin/?gclid=EAIaIQobChMI3aPF-IbM9gIVy9aWCh3PVwWBEAAYASAAEgJyB_D_BwE" target="_blank">최저가 비만 클리닉 알아보기</a></h2> 
+					<dl>
+						<dd><a href="http://theskinny.co.kr/realmodel/subin/?gclid=EAIaIQobChMI3aPF-IbM9gIVy9aWCh3PVwWBEAAYASAAEgJyB_D_BwE" target="_blank">더 스키니 의원</a></dd>
+						<dd><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjdo8X4hsz2AhXL1pYKHc9XBYEYABAGGgJ0bA&ae=2&ohost=www.google.com&cid=CAASEuRo1oK9
+						pHtxwEu-Beh8bwkPMQ&sig=AOD64_1N9a1HulXUnySTpZM01IGKGbsTPg&q&adurl&ved=2ahUKEwjp6L_4hsz2AhXFAogKHZkeCdMQ0Qx6BAgIEAE&dct=1" target="_blank">달라진 다이어트</a></dd>
+						<dd><a href="https://trueman75.co.kr/Body/BodyShape/Abdomen?__REFERER=" target="_blank">트루맨 남성의원</a></dd>
+						<dd><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjdo8X4hsz2AhXL1pYKHc9XBYEYABAEGgJ0bA&ae=2&ohost=www.google.com&cid=CAASEuRo1oK9
+						pHtxwEu-Beh8bwkPMQ&sig=AOD64_0sYPeOheUiba5nqQ0GOZ4K50pw8g&q&adurl&ved=2ahUKEwjp6L_4hsz2AhXFAogKHZkeCdMQ0Qx6BAgGEAE&dct=1" target="_blank">예그린 한의원</a></dd>
+					</dl>		
+				<% 
+			
+			}
+				
+		%>
+		
+	</body>
+</html>

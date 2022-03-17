@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			int weight;
+			double height;
+			weight = Integer.parseInt(request.getParameter("weight"));
+			height = Double.parseDouble(request.getParameter("height")) * 0.01;
+			double bmi =  weight / (height * height);
+		%>
+		<h1>당신의 BMI는 <%=String.format("%2.2f", bmi) %>입니다.</h1><br>
+		<img alt="bmiTable" src="./imgsrc/bmiTable.png">
+	</body>
+</html>

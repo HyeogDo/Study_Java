@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<div style="position: absolute; left: 40%; top: 20%;">
+			수량 : <input type="text" name="quantity"><br>
+			크기 : 
+			<input type="radio" name="size" value="large" checked="checked">
+			<input type="radio" name="size" value="medium">
+			<input type="radio" name="size" value="small">
+			
+		
+		</div>
+	
+	</body>
+</html>

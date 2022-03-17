@@ -10,5 +10,7 @@
 		<h1>Include Page</h1>
 		<%@include file = "Include_01.jsp"%>
 		<h1>다시 Include Page</h1>
+		<%=i %>
+		<%=hello()%>
 	</body>
 </html>

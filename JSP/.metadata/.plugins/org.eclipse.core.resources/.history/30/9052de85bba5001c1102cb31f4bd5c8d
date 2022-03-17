@@ -1,0 +1,16 @@
+<%@page import="java.net.URLDecoder"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Addition</title>
+	</head>
+	<body>
+		<%
+			int num1 = Integer.parseInt(URLDecoder.decode(request.getParameter("num1")));
+			int num2 = URLDecoder.decode(request.getParameter("num2")));
+		%>
+	</body>
+</html>

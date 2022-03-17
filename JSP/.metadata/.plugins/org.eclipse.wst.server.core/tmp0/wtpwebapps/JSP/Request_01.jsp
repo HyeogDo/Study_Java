@@ -9,7 +9,11 @@
 	<body>
 		<p>이름을 입력하고 확인 버튼을 누르세요</p>
 		<form action="Request_02.jsp" method="post">
-			<p>이름 : <input name="userName" type="text" maxlength="10" > <input type="submit" value="확인"></p>
 		</form>
+		
+		<%
+			String name = "James";
+		%>
+		<a href="http://localhost:8080/JSP/Request_02.jsp?userName=<%=name%>">Test</a>
 	</body>
 </html>

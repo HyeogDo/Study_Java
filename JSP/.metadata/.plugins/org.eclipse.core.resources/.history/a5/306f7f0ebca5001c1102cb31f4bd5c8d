@@ -1,0 +1,21 @@
+<%@page import="java.net.URLDecoder"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Addition</title>
+	</head>
+	<body>
+		<%
+			int num1 = Integer.parseInt(URLDecoder.decode(request.getParameter("num1"), "UTF-8"));
+			int num2 = Integer.parseInt(URLDecoder.decode(request.getParameter("num2"), "UTF-8"));
+		%>
+		
+		첫번째수 :<input type="text" value=<%=num1 %> readonly="readonly"><br>
+		두번째수 :<input type="text" value=<%=num2 %> readonly="readonly"><br>
+		<br>
+		<%=num1 %> + <%=num2 %> = <% out.print(num1 + num2) %>
+	</body>
+</html>

@@ -1,2 +1,6 @@
 1647329238234	Rename resource 'Quiz02.jsp'
 1647397146424	Rename resource 'Iclude_01.jsp'
+1647480889384	Move 'Quiz_10.jsp' to 'webapp'
+1647480891651	Move 'Quiz_10_result.jsp' to 'webapp'
+1647481251542	Delete element
+1647483917115	Move 'Quiz_10_bmi25.jsp' to 'webapp'
