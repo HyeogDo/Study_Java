@@ -1,0 +1,12 @@
+package com.javalec.base;
+
+public class Bean_01 {
+	
+	private String name;
+	private int value;
+	
+	public Bean_01() {
+		
+	}
+
+}

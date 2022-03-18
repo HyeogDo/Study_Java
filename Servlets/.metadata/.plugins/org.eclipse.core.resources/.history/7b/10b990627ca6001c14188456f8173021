@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		개인 정보를 입력하세요
+		<br>
+		<form action="userInsert_02.jsp">
+			아이디 : &emsp;<input type="text" name="userId"><br>
+			패스워드 : &emsp;<input type="password" name="userPwd"><br>
+			이름 : &emsp;<input type="text" name="userName"><br>
+			<br>
+			<br>
+			<input type="submit" value="확인">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+2022-03-18 10:21:00,045 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-18 10:21:31,408 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-18 10:59:31,229 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-18 16:04:18,251 [main] INFO  org.eclipse.jetty.server.Server - jetty-10.0.6; built: 2021-06-29T15:28:56.259Z; git: 37e7731b4b142a882d73974ff3bec78d621bd674; jvm 17.0.2+8-LTS-86
+2022-03-18 16:04:21,846 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2022-03-18 16:04:21,879 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3c957226{/wse,null,AVAILABLE}
+2022-03-18 16:04:21,892 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7aae2b09{HTTP/1.1, (http/1.1)}{0.0.0.0:50814}
+2022-03-18 16:04:21,895 [main] INFO  org.eclipse.jetty.server.Server - Started Server@2580a201{STARTING}[10.0.6,sto=0] @18308032ms
