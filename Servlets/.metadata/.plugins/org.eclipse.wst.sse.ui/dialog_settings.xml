@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="contentassistsize">
+		<item key="contextSelector.size.x" value="315"/>
+		<item key="contextSelector.size.y" value="165"/>
 	</section>
 	<section name="org.eclipse.wst.sse.ui.quick_outline">
 		<item key="org.eclipse.wst.sse.ui.internal.quickoutline.QuickOutlinePopupDialogDIALOG_WIDTH" value="361"/>
