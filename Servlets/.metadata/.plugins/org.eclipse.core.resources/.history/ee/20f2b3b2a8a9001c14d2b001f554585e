@@ -1,0 +1,55 @@
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@page import = "java.sql.*" %>
+<%
+	request.setCharacterEncoding("utf-8");
+	String userid = request.getParameter("userid");
+	ArrayList<String> userInfo = new ArrayList<String>();
+	
+	String url_mysql = "jdbc:mysql://localhost:3306/customer?serverTimezone=Asia/Seoul&characterEncoding=utf8&useSSL=false";
+	String id_mysql = "root";
+	String pw_mysql = "qwer1234";
+	
+	String query = "select * from purchaserinfo where userid = '" + userid + "'";
+	String id = "";
+	String id2 = "";
+	String id3 = "";
+	String id4 = "";
+	try{
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection conn_mysql = DriverManager.getConnection(url_mysql, id_mysql, pw_mysql);
+		Statement stmt_mysql = conn_mysql.createStatement();
+		
+		ResultSet rs = stmt_mysql.executeQuery(query);
+		
+		int i = 1;
+		while(rs.next()) {
+			id = rs.getString(i);
+			userInfo.add(id);
+			i++;
+		}
+		conn_mysql.close();
+		session.setAttribute("USERID", userInfo.get(0));	
+		session.setAttribute("USERNAME", userInfo.get(1));	
+		session.setAttribute("USERPHONE", userInfo.get(2));	
+		session.setAttribute("USERADDRESS", userInfo.get(3));	
+		
+	} catch(Exception e) {
+		e.printStackTrace();
+	}
+	//response.sendRedirect("purchaserUpdate_03.jsp");
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<% 
+		out.print(userInfo.get(0) + userInfo.get(1));
+	%>
+</body>
+</html>
